@@ -8,6 +8,7 @@ import shlex
 def pynotify(title, body, icon='notification-audio-play'):
     n = Notification(title, body, icon)
     n.set_hint_string("x-canonical-append", "true")
+    n.set_hint_int32("transient", 1)
     n.show()
 
 def main():
