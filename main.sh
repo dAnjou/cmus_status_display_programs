@@ -1,3 +1,3 @@
 #!/bin/sh
 
-~/.cmus/status_display_programs/notify-send.py "$@" &
+DISPLAY=:0 ~/.cmus/status_display_programs/notify-send.py "$@" &
